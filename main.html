@@ -5,7 +5,14 @@
   <body>
     Enter your name: <input type="text" id="fname">
 	
-	<script type="text/javascript" src="./script.js">
+	<script type="text/javascript" >
+        (()=>{
+            let fname = document.getElementById("fname");
+		    fname.addEventListener("input",()=>{
+            fname.value= fname.value.toUpperCase();
+        });
+        })();
 	</script>
   </body>
 </html>
+
